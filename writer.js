@@ -11,7 +11,7 @@ const write = (path, str) => {
   }
 };
 const writeJson = (path, obj) => {
-  write(path, JSON.stringify(obj));
+  write(path, JSON.stringify(obj, null, 2));
 };
 
 module.exports = {

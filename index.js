@@ -9,6 +9,7 @@ const babelWriter = require('./babel-writer');
 const eslintWriter = require('./eslint-writer');
 const srcIndexWriter = require('./src-index-writer');
 const travisWriter = require('./travis-writer');
+const setupTestWriter = require('./setup-test-writer');
 
 const path = process.argv[process.argv.length - 1];
 
@@ -26,4 +27,5 @@ webpackWriter(`${path}`);
 babelWriter(`${path}`);
 eslintWriter(`${path}`);
 srcIndexWriter(`${path}`, `${path}`);
+setupTestWriter(`${path}`);
 travisWriter(`${path}`);

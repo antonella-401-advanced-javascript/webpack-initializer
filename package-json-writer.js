@@ -7,6 +7,9 @@ const packageWriter = path => {
     'description': '',
     'main': 'src/index.js',
     'jest': {
+      "setupFilesAfterEnv": [
+        "<rootDir>src/setupTests.js"
+      ],
       'snapshotSerializers': [
         'enzyme-to-json/serializer'
       ],

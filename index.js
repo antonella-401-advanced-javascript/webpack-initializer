@@ -10,6 +10,7 @@ const eslintWriter = require('./eslint-writer');
 const srcIndexWriter = require('./src-index-writer');
 const travisWriter = require('./travis-writer');
 const setupTestWriter = require('./setup-test-writer');
+const redirectsWriter = require('./redirects-writer');
 
 const path = process.argv[process.argv.length - 1];
 
@@ -29,3 +30,4 @@ eslintWriter(`${path}`);
 srcIndexWriter(`${path}`, `${path}`);
 setupTestWriter(`${path}`);
 travisWriter(`${path}`);
+redirectsWriter(`${path}`);

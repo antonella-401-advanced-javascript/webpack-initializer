@@ -19,6 +19,7 @@ if(path !== '.') {
 }
 
 fs.mkdirSync(`${path}/src`);
+fs.mkdirSync(`${path}/public`);
 
 packageJsonWriter(`${path}`);
 gitignoreWriter(`${path}`);
